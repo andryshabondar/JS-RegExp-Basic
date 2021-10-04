@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dedede;
+    font-family: sans-serif;
+}
+
+.form {
+    width: 490px;
+    height: 480px;
+    margin: 0 auto;
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.please {
+    font-size: 24px;
+}
+
+.styleInput {
+    height: 55px;
+    outline: none;
+    border: 2px solid #c9c9c9;
+    border-radius: 5px;
+    text-indent: 9px;
+    transition-duration: 0.3s;
+}
+
+.styleInput:focus{
+    box-shadow: 0 0 5px 5px #8bafdf;
+    border: 1px solid #8bafdf;
+}
+
+.firstError{
+    display: none;
+    width: 207px;
+    height: 18px;
+    background-color: #d53a4a;
+    border-radius: 3px;
+    color: white;
+    font-size: 13px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 102px;
+    left: 0px;
+}
+
+.lastError{
+    display: none;
+    width: 207px;
+    height: 18px;
+    background-color: #d53a4a;
+    border-radius: 3px;
+    color: white;
+    font-size: 13px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 175px;
+    left: 0px;
+}
+
+.emailError{
+    display: none;
+    width: 230px;
+    height: 18px;
+    background-color: #d53a4a;
+    border-radius: 3px;
+    color: white;
+    font-size: 13px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 279px;
+    left: 0px;
+}
+
+.passError{
+    display: none;
+    width: 210px;
+    height: 18px;
+    background-color: #d53a4a;
+    border-radius: 3px;
+    color: white;
+    font-size: 13px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 363px;
+    left: 0px;
+}
+
+.labelFirst {
+    position: absolute;
+    top: 76px;
+    left: 10px;
+    font-size: 14px;
+    transition: 0.3s; 
+}
+
+.labelFirstUP{
+    top: 60px;
+    font-size: 10px;
+}
+
+.labelLast {
+    position: absolute;
+    top: 160px;
+    left: 10px;
+    font-size: 14px;
+    transition: 0.3s; 
+}
+
+.labelLastUP{
+    top: 143px;
+    font-size: 10px;
+}
+
+.labelEmail {
+    position: absolute;
+    top: 244px;
+    left: 10px;
+    font-size: 14px;
+    transition: 0.3s; 
+}
+
+.labelEmailUP{
+    top: 229px;
+    font-size: 10px;
+}
+
+
+.labelPass {
+    position: absolute;
+    top: 328px;
+    left: 10px;
+    font-size: 14px;
+    transition: 0.3s; 
+}
+
+.labelPassUP{
+    top: 313px;
+    font-size: 10px;
+}
+
+.check{
+    background: url(./images/check.svg);
+    background-color: white;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 450px 12px;
+}
+
+.noCheck{
+    background: url(./images/multiply.svg);
+    background-color: white;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 450px 15px;
+}
+
+.divCheckBox {
+    display: flex;
+    align-self: flex-start;
+}
+
+.inButt {
+    height: 40px;
+    background-color: #4896e9;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.inButt1{
+    background-color: #0070f2;
+}
+
+.inButt1:hover{
+    background-color: #005fcf;
+}
+
+
+.inButt:focus{
+    box-shadow: 0 0 5px 5px #8bafdf;
+    border: 1px solid #8bafdf;
+}
+
+/*---------------------------------------------Great!------------------------------------------*/
+
+.final{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position:absolute;
+    top: 0;
+    left: 0;
+    color: #3d4051;
+}
+
+.final_all{
+    opacity: 1;
+    margin: 130px auto;
+    width: 460px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.final_all_green{
+    background-color: #38b993;
+    height: 150px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    background-image: url(./images/check-circle.svg);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: 165px 11px;
+}
+
+.final_all_white{
+    background-color: white;
+    height: 190px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.great{
+    font-size: 35px;
+}
+
+.yourAcc{
+    font-size: 16px;
+}
+
+.inStart{
+    width: 160px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    background-color: #dea404;
+    background-image: url(./images/arrow-right.svg);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 123px 6px;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    text-indent: -20px;
+    cursor: pointer;
+}

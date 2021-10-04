@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form">
+
+        <p class="please">Please sing up</p>
+
+        <input class="w100 styleInput inFirst" id="inFirst" type="text">
+        <label class="labelFirst" for="inFirst">First name</label>
+        <div class="firstError"><p>Please provide a valid First name.</p></div>
+
+        <input class="w100 styleInput inLast" id="inLast" type="text">
+        <label class="labelLast" for="inLast">Last name</label>
+        <div class="lastError"><p>Please provide a valid Last name.</p></div>
+
+        <input class="w100 styleInput inEmail" id="inEmail" type="email">
+        <label class="labelEmail" for="inEmail">Email address</label>
+        <div class="emailError"><p>Please provide a valid Email address.</p></div>
+
+        <input class="w100 styleInput inPass" id="inPass" type="password">
+        <label class="labelPass" for="inPass">Password</label>
+        <div class="passError"><p>Please provide a valid Password.</p></div>
+
+        <div class="divCheckBox w100">
+            <label for="checkBox"><input id="checkBox" class="checkBox" type="checkbox"><span>I agree with Privacy Policy</span></label>
+        </div>
+
+        <input class="w100 inButt" type="button" value="Sign Up" disabled>
+
+    </form>
+
+    <form class="final">
+        <div class="final_all">
+            <div class="final_all_green"></div>
+            <div class="final_all_white">
+                <p class="great">Great!</p>
+                <p class="yourAcc">Your account has been created succesfully.</p>
+                <input type="button" class="inStart" value="Start Exploring">
+            </div>
+        </div>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
